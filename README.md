@@ -18,5 +18,7 @@ One set of guidelines used for creating this game was that one of the numbers sh
 Example Usage:
 
 python exquisite.py -good_big 42 -bad_big 66
+
 *GAMEPLAY HAPPENS*
+
 (78, 22)
