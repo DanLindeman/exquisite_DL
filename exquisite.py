@@ -44,16 +44,14 @@ class Game(Tkinter.Tk):
         for but in self.buttons.keys():
             if self.buttons[but].config('text')[-1] == 'O':
                 score += 1
-
         return (score, 100-score)
 
     def countdown(self, remaining=None):
         if remaining is not None:
             self.remaining = remaining
-
         if self.remaining <= 0:
             self.label.configure(text="Done!")
-            print self.get_score()
+            print(self.get_score())
             game.quit()
         else:
             self.label.configure(text="%d" % self.remaining)
