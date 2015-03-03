@@ -66,4 +66,5 @@ if __name__ == "__main__":
                         help="This is really bad to have big")
     args = parser.parse_args()
     game = Game(int(args.good_big), int(args.bad_big))
+    game.wm_title("Exquisite Game")
     game.mainloop()
