@@ -10,7 +10,9 @@ Since this is the first iteration of Exquisite Game that I know of, we chose som
 For this iteration, a pair of integers.
 
 On a very high level each individual game does something like this:
+
 (12, 1004) -> *Exquisite Game Alters the values* -> (333, 10)
+
 and so on...
 
 One set of guidelines used for creating this game was that one of the numbers should be good if big, the other bad.
