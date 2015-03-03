@@ -10,7 +10,9 @@ class ExampleApp(Tkinter.Tk):
         Tkinter.Tk.__init__(self)
         self.label = Tkinter.Label(self, text="", width=10)
         self.label.grid(column=0, row=0)
-        self.total = float(good_big + bad_big)
+        self.good_big = good_big
+        self.bad_big = bad_big
+        self.total = float(self.good_big + self.bad_big)
         for x in range(1, 11):
             for y in range(1, 11):
                 #Choose a good or bad, place it appropriately
@@ -29,7 +31,7 @@ class ExampleApp(Tkinter.Tk):
 
         if self.remaining <= 0:
             self.label.configure(text="time's up!")
-            print(math.floor((good_big/self.total) * 100), math.ceil((bad_big/self.total) * 100))
+            print(math.floor((self.good_big/self.total) * 100), math.ceil((self.bad_big/self.total) * 100))
             app.quit()
         else:
             self.label.configure(text="%d" % self.remaining)
