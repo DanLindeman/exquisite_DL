@@ -22,7 +22,6 @@ class ExampleApp(Tkinter.Tk):
 
     def callback(self, nums):
         x, y = nums
-        print("click! {0}, {1}".format(x, y))
 
     def countdown(self, remaining=None):
         if remaining is not None:
