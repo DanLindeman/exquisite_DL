@@ -22,7 +22,10 @@ One set of guidelines used for creating this game was that one of the numbers sh
 ```
 python exquisite.py -good_big 42 -bad_big 66
 ```
-*GAMEPLAY HAPPENS*
+# Objective
+You have ten seconds! There will be a number of X labeled buttons, click them to turn them to an O button! Convert as many as you can!
+
+![Image of Exquisite Game](https://github.com/DanLindeman/exquisite_DL/blob/master/Exquisite_Game.png)
 ```
 >>>(78, 22)
 ```
